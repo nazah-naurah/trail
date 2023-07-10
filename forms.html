@@ -3,40 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" ><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" ><br><br>
-        <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address" ><br><br>
-        <label for="contact">Contact:</label><br>
-        <input type="number" id="contact" name="contact" value="########66"><br><br>
-        <label for="mail">E mail id:</label><br>
-        <input type="email" id="mail" name="mail" value="________@gmail.com"><br><br>
-        <label for="dob">Date of birth:</label><br>
-        <input type="date" id="dob" name="dob" value="dd-mm-yy"><br><br>
-        <label for="gender">Gender</label><br>
-        <input type="radio" id="male" name="gender">
-        <label for="Male">Male</label><br>
-        <input type="radio" id="female" name="gender">
-        <label for="Female">Female</label><br>
-        <label for="Course">Course</label><br>
-        <input type="checkbox" id="mca" name="Course">
-        <label for="mca">MCA</label><br>
-        <input type="checkbox" id="msc" name="Course">
-        <label for="msc">MSC</label><br>
-        <input type="submit" value="Submit">
-        <input type="reset">
-    </form>
-    <h1>
-        this is for testing 
-    </h1>
-    <h2>
-        test2
-    </h2>
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbxSKedhn7GkjKjUBk3uTp70tt88hSX1LErPYBbGHpQD9cNs9uQKcEgSdt9GmoaDdrT9/exec">
+        <div class="container">
+            <div class="user-deatils">
+            <table>
+                <tr>
+                   <td>
+                    <div class="title">Registration form</div>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-box">
+                            <span class="details">First name</span>
+                            <input type="text" placeholder="Enter first name" id="fname" name="fname" required >
+                        </div>
+                    </td>
+                   
+                </tr>
+            </table>
+            
+            
+                
+                <div class="input-box">
+                    <span calss="details">Second name</span>
+                    <input type="text" placeholder="Enter Second name" id="sname" name="sname" required >
+                </div>
+        
+                <div class="input-box">
+                    <span calss="details">Address</span>
+                    <input type="text" placeholder="Enter Address" id="add" name="add" required >
+                </div>
+                <div class="input-box">
+                    <span calss="details">Contact number</span>
+                    <input type="text" placeholder="Enter phone number" id="phone" name="phone" required >
+                </div>
+                <div class="input-box">
+                    <span calss="details">Mail id</span>
+                    <input type="email" placeholder="Enter mailid" id="mail" name="mail" required >
+                </div>
+                <div class="input-box">
+                    <span calss="details">Date of birth</span>
+                    <input type="date" placeholder="dd-mm-yy" id="dob" name="dob" required >
+                </div>
+                <br>
+                <tr>
+                    <td>
+                        <span calss="gender">Gender</span>
+                        <br>
+                    </td>
+                    </tr>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="Female">Female</label><br>
+                    </td>
+                    <br>
+                    <tr>
+                        <td>
+                            <span class="course">Course</span>
+                            <br>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="mca" name="Course" value="MCA">
+                            <label for="mca">MCA</label><br>
+                            <input type="checkbox" id="msc" name="Course" value="MSC">
+                            <label for="msc">MSC</label><br>
+                        </td>
+                    </tr>
+                    <br>
+                
+                <div class="img">
+                    <label for="im">Upload your photo</label>
+                    <input type="file" id="im" name="im">            
+                </div>
+                <br>
+                <div class="button">
+                    <tr>
+                        <td>
+                            <input type="submit" id="b1" value="Submit">
+                        </td>
+                        <td> 
+                            <input type="reset" id="b2" >
+                        </td>
+                    </tr>
+                </div>
+            </div>  
+            
+        </form>
+    </div>
 </body>
 </html>

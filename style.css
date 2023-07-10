@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+
+}
+body{
+    background: linear-gradient(135deg,#D4F7E4,#6FAF8D);
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.container{
+    max-width:700px;
+    width:100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container.title{
+    font-size: 50px;
+    font-weight: 800;
+    position: relative;
+}
+
+.container form .user-deatils{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    width: calc(100%/ 2 - 20px);
+    margin-bottom: 15px;
+}
+.user-deatils .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-deatils .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-bottom-width: 5px;
+}
+.user-deatils .input-box input:focus,
+.user-deatils .input-box input:valid{
+    border-color:#6FAF8D ;
+}
+#b1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    padding: 2px;
+    
+}
+#b2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    margin-left: 50px;
+    padding: 2px;
+    
+}
